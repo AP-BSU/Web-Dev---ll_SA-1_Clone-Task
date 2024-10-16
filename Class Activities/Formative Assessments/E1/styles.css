@@ -1,0 +1,36 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Times New Roman', Times, serif;
+  background-color: #f0f0f0;
+}
+
+.navbar {
+  background-color: #a6a6a6;
+  padding: 15px 0;
+}
+
+/* Flexbox container */
+.nav-list {
+  display: flex;
+  justify-content: space-around;  /* Spacing */
+  list-style: none;
+  text-align: center;
+}
+
+.nav-list li a {
+  text-decoration: none;
+  color: white;
+  padding: 10px 20px;
+  font-size: 18px;
+  transition: background-color 0.3s ease;
+}
+
+.nav-list li a:hover {
+  background-color: #575757;
+  border-radius: 5px;
+}
