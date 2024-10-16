@@ -1,0 +1,10 @@
+/*Paragraph 1 with red color*/
+.paragraph1 {
+  color: red;
+  text-decoration: underline;
+}
+/*Paragraph 2 with border*/
+.paragraph2 {
+  border: 2px solid blue;
+  padding: 10px;
+}

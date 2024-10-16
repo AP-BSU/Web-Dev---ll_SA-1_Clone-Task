@@ -1,0 +1,113 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: url('bgw.jpg') no-repeat center center fixed; /* Background image for main page */
+  background-size: cover;
+  color: #ffffff; /* Default text color */
+}
+
+/* Header Section */
+header {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+}
+/*Texts*/
+.company-overview {
+  flex-basis: 50%;
+  color: #ffffff; 
+}
+
+.contact-details {
+  flex-basis: 50%;
+  text-align: right;
+  color: #c5c5c5;
+}
+
+/* Main Image Grid */
+.image-grid {
+  display: flex;
+  justify-content: space-around;
+  padding: 20px;
+  flex-wrap: wrap;
+}
+
+.image-item {
+  text-align: center;
+  width: 150px;
+  height: auto;
+}
+
+.image-item h3 {
+  color: #ffffff; /* Font color for image titles */
+}
+
+.image-item p {
+  color: #ffffff; /* Font color for image descriptions */
+}
+
+.image-item img {
+  width: 150px;
+  height: 150px; /* Limit image size */
+  border: 1px solid #ccc; /* Small border */
+  background-color: #fff; /* White background */
+  border-radius: 10px;
+  transition: transform 0.3s;
+}
+
+.image-item img:hover {
+  transform: scale(1.05);
+}
+
+/* Icon to expand */
+.side-gallery {
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+}
+
+.side-gallery img {
+  width: 50px;
+  cursor: pointer;
+}
+
+/* Hidden Gallery Section */
+.gallery.hidden {
+  display: none;
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* 2 column grid layout */
+  gap: 10px;
+  padding: 20px;
+  justify-content: center; /* Center the images */
+}
+
+/* Gallery Image Item */
+.gallery .image-item img {
+  width: 100px;
+  height: 100px;
+  background-color: #fff; /* White background */
+  border: 1px solid #ccc;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .image-grid {
+    flex-direction: column;
+  }
+
+  .image-grid img {
+    width: 100%; /* Responsive image sizing */
+  }
+
+  .side-gallery img {
+    width: 40px;
+  }
+}

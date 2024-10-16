@@ -1,0 +1,24 @@
+/*Properties of image*/
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+/*Container*/
+.image-container {
+    text-align: center;
+}
+/*image scale (720p)*/
+img {
+    width: 1280px;
+    height: 720px;
+    object-fit: cover;
+}
