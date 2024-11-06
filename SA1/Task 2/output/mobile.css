@@ -1,0 +1,94 @@
+/* Import Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Teko:wght@400;700&family=Lato:wght@400;700&display=swap');
+
+/* mobile CSS*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Lato', sans-serif; /* Lato for main text */
+  background-color: #4DCCBD;
+  color: #333;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  font-family: 'Teko', sans-serif;
+  font-size: 1.5em; /* Reduced font size on mobile */
+  margin-bottom: 20px;
+  background-color: #fff;
+  padding: 10px 20px;
+  border-bottom: 1px solid #ddd;
+}
+
+h1 {
+  text-align: left;
+  font-size: 2em;
+  margin: 0;
+}
+
+.search-button {
+  font-family: 'Teko', sans-serif; /* Use Teko font for header button */
+  font-size: 1.2em; /* Reduced font size for the search button */
+  padding: 4px 8px;
+  background-color: #333;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-left: auto;
+  max-width: 120px;
+  text-align: center; /* Center text inside the button */
+}
+
+nav {
+  display: none; /* Hides the nav */
+}
+
+.grid-container {
+  display: grid;
+  gap: 20px;
+  width: 100%;
+  max-width: 600px;
+  grid-template-columns: 1fr; /* Single column for mobile view */
+}
+
+.grid-item {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.grid-item img {
+  width: 100%;
+  height: auto;
+}
+
+.content {
+  font-family: 'Lato', sans-serif;
+  padding: 15px;
+}
+
+button {
+  font-family: 'Teko', sans-serif;
+  font-size: 2em;
+  padding: 8px;
+  width: 100%;
+  color: #fff;
+  background-color: #333;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}

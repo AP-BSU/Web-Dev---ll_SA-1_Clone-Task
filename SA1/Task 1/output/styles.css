@@ -1,0 +1,267 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Josefin Sans', sans-serif;
+  background-color: #e9e9e9;
+  color: #333;
+}
+
+/* Headers */
+header {
+  text-align: center;
+  padding: 20px;
+  background-color: #e9e9e9;
+  position: relative;
+}
+
+.logo {
+  text-align: center;
+}
+
+.logo img {
+  width: 200px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 20%;
+  margin-top: 10px;
+  padding: 0;
+}
+
+nav ul li {
+  margin: 0; /* Remove left margin to use gap for consistent spacing */
+}
+
+
+nav ul li a {
+  text-decoration: none;
+  color: black;
+}
+
+/* Main container */
+main {
+  max-width: 1200px;
+  margin: 0 auto;
+  background-color: white;
+  padding: 50px;
+}
+
+h1 {
+  font-family: 'Protest Guerrilla', sans-serif;
+  font-size: 4em;
+  text-align: left;
+}
+
+h2 {
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 2em;
+  margin-top: 30px;
+  text-align: left;
+  grid-column: 1 / 2; /* header for the left grid */
+  max-width: px;
+}
+
+/* Paragraph and Text Section */
+.intro-paragraph {
+  font-size: 1.5em;
+  margin-bottom: 20px;
+  text-align: left;
+  max-width: 80%;
+
+}
+
+.paragraph-section {
+text-align: left;
+
+
+}
+
+.paragraph-section {
+  /* Number of columns */
+  column-count: 3;
+  
+  /* Space between columns */
+  column-gap: 40px; /* Customize the gap between columns */
+
+  /* Optional: Add a rule between columns */
+  column-rule: 6px solid #ccc; /* This adds a vertical line between columns */
+  column-span: all;
+  column-rule-style: solid;
+  column-fill: balance;
+}
+
+/* Heading styling */
+.paragraph-section h1 {
+  font-size: 1.8em;
+  margin-bottom: 10px;
+  text-align: left;
+}
+
+.paragraph-section h2 {
+  font-size: 1.8em;
+  margin-bottom: 10px;
+  text-align: left;
+}
+
+/* Paragraph styling */
+.paragraph-section p {
+  padding: 10%;
+  font-size: 1em;
+  margin-bottom: 10px;
+}
+
+/* Responsive adjustments for small screens */
+@media (max-width: 720px) {
+  /* Change to a single column on smaller devices */
+  .paragraph-section {
+    column-count: 1; /* Set to 1 column for smaller screens */
+  }
+}
+
+/* Album Section */
+.album-section {
+  display: grid;
+  grid-template-columns: 2fr 3fr; /* Featured album 2 parts, album grid 3 parts */
+  gap: 20px;
+  margin-top: 50px;
+  align-items: start;
+}
+
+/* Featured album on the left */
+.featured-album {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  width: auto;
+  height: auto;
+  padding: 10px;
+}
+
+.featured-album img {
+  width: 157%; /* Allow full width scaling */
+  height: auto;
+  border: 1px solid #ccc;
+  object-fit: cover;
+  object-position: center;
+}
+
+/* Album grid on the right */
+.album-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* Two columns for albums */
+  gap: 10px;
+  margin-top: 0;
+}
+
+.album-grid img {
+  width: 100%;
+  height: auto;
+  border: 1px solid #ccc;
+}
+
+/* Author section */
+.author-section {
+  padding: 10px; /* Padding around the section */
+  max-width: 70%; /* Limit the section width */
+  margin: 40px auto; /* Center align the section */
+}
+
+/* Styling for the header inside the author section */
+/* Customizing the header appearance */
+.author-section h2 {
+  font-size: 2em; /* Increase font size */
+  font-family: 'Georgia', serif; /* Use a serif font for the header */
+  text-align: center; /* Center the header text */
+  margin-bottom: 20px; /* Add space below the header */
+  text-transform: uppercase; /* Uppercase styling for header text */
+}
+
+/* Styling for the paragraph inside the author section */
+.author-section p {
+  font-size: 1.2em;
+  line-height: 1.4;
+  text-align: justify;
+  margin-bottom: 10px;
+}
+
+
+.author-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.author-photo img {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  margin-left: 20px;
+}
+
+/* Device Adjustments */
+@media (max-width: 1024px) {
+  main {
+    padding: 30px;
+  }
+
+  .logo img {
+    width: 150px;
+  }
+
+  .album-section {
+    grid-template-columns: 1fr;
+  }
+
+  .album-grid {
+    grid-template-columns: 1fr; /* Single column for smaller screens */
+  }
+}
+
+@media (max-width: 720px) {
+  main {
+    padding: 20px;
+  }
+
+  .author-content {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .author-photo {
+    margin-top: 20px;
+  }
+}
+
+@media (max-width: 540px) {
+  main {
+    padding: 12px;
+  }
+
+  .logo img {
+    width: 120px;
+  }
+
+  .author-photo img {
+    width: 150px;
+  }
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  background-color: #14181d;
+  padding: 20px;
+  color: white;
+  margin-top: 0;
+  width: 100%; /* Full width footer */
+  height: auto;
+  position: relative;
+}

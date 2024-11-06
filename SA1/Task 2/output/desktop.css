@@ -1,0 +1,197 @@
+/* Import Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Teko:wght@400;700&family=Lato:wght@400;700&display=swap');
+
+* { /* Default CSS and for desktop*/
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body Style */
+body {
+  font-family: 'Lato', sans-serif; /* Lato for main text */
+  background-color: #4DCCBD;
+  color: #333;
+  padding: 48px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Header Style */
+header {
+  width: 100%;
+  max-width: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 48px;
+  padding: 16px;
+  background-color: #333;
+  color: #fff;
+  font-family: 'Teko', sans-serif;
+}
+
+header h1 {
+  font-size: 3em;
+}
+
+header nav a {
+  font-size: 3em;
+  color: #fff;
+  margin-right: 16px; /*list padding*/
+  text-decoration: none;
+}
+
+.search-button {
+  font-family: 'Teko', sans-serif;
+  font-size: 2em;
+  padding: 8px 16px;
+  background-color: #555;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* Main Grid Container */
+.grid-container {
+  display: grid;
+  gap: 48px;
+  width: 100%;
+  max-width: 1200px; /* Adjust max-width for container width scaling */
+}
+
+/* Section 1: Full Width Item */
+.section1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  grid-column: 1 / -1; /* Full width */
+}
+
+.section1 img {/* Image stretches to full width of container */
+  width: 100%;
+  height: 75%;
+  object-fit: cover;
+  object-position: 50% 50%;
+}
+
+.section1 .content {
+  padding: 16px;
+  font-size: 1.5em;
+  display: flex;
+  flex-direction: grid;
+  gap: 16px;
+  text-align: left;
+  text-justify: auto;
+}
+
+.section1 button {
+  font-family: 'Teko', sans-serif;
+  font-size: 2em;
+  padding: 80px;
+  width: auto;
+  height: auto;
+  color: #fff;
+  background-color: #333;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  align-self: flex-end;
+}
+
+/* Section 2: Two-Column Layout */
+.section2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 48px;
+}
+
+.section2 .grid-item {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: left;
+}
+
+.section2 .grid-item img {
+  width: 100%;
+  height: auto;
+}
+
+.section2 .content {
+  padding: 16px;
+  font-size: 1.5em;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 16px;
+}
+
+.section2 button {
+  font-family: 'Teko', sans-serif;
+  font-size: 2em;
+  padding: 10px;
+  width: 100%;
+  color: #fff;
+  background-color: #333;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* Section 3: Vertical 3-Item Column */
+.section3 {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  grid-column: 1 / -1;
+}
+
+.section3 .horizontal-layout {
+  display: flex;
+  align-items: center;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.section3 .horizontal-layout img {
+  width: 50%;
+  height: auto;
+}
+
+.section3 .content {
+  padding: 16px;
+  text-align: left;
+  font-size: 1.5em;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 16px;
+}
+
+.section3 button {
+  font-family: 'Teko', sans-serif;
+  font-size: 2em;
+  padding: 10px;
+  width: 100%;
+  color: #fff;
+  background-color: #333;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+

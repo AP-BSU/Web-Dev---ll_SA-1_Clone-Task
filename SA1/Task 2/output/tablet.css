@@ -1,0 +1,136 @@
+/* Import Google Fonts Teko and Lato */
+@import url('https://fonts.googleapis.com/css2?family=Teko:wght@400;700&family=Lato:wght@400;700&display=swap');
+
+/* Tablet CSS */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Lato', sans-serif;
+  background-color: #4DCCBD;
+  color: #333;
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 16px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  box-sizing: border-box;
+}
+
+h1 {
+  font-family: 'Teko', sans-serif; /* Font for header in Teko */
+  font-size: 3em; /* Header font size */
+  color: #222;
+  margin: 0;
+}
+
+nav { /* Nav and flex styles for Tablet CSS*/
+  display: flex;
+  flex: 1; 
+  justify-content: center;
+  gap: 16px;
+}
+
+nav a {
+  font-family: 'Teko', sans-serif;
+  font-size: 1.5em;
+  color: #333;
+  text-decoration: none;
+}
+
+.search-button { /* search button styles*/
+  font-family: 'Teko', sans-serif;
+  font-size: 1.6em;
+  padding: 4px 12px;
+  background-color: #555;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-left: auto;
+}
+
+/* CSS Grid Layout for Tablet Screens */
+@media (min-width: 768px) and (max-width: 1027px) {
+  .grid-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Two columns */
+    gap: 20px;
+    width: 100%;
+    max-width: 1000px;
+  }
+
+  .section1, .section2, .section3 {
+    display: contents;
+  }
+
+  .grid-item {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; /* Center content horizontally */
+    font-size: 1.5em; /* Font size for content */
+    height: 100%;
+  }
+
+  /* Adjust Image Styling for responsive Fit */
+  .grid-item img {
+    width: 100%; /* Make the image take full width of its container */
+    height: auto; /* Maintain aspect ratio */
+    object-fit: cover;
+    border-radius: 4px;
+    margin-bottom: 16px;
+  }
+
+  /* Button Styling - Fully Centered */
+  .grid-item button {
+    font-family: 'Teko', sans-serif; /* Font for buttons */
+    font-size: 2em;
+    padding: 12px 30%;
+    color: #fff;
+    background-color: #333;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    text-align: center;
+  }
+
+  /* Ensure horizontal items stack vertically */
+  .horizontal-layout {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+/* Additional Styling for Content */
+.content {
+  text-align: center;
+  flex-grow: 1;
+}
+
+.content p {
+  font-family: 'Lato', sans-serif; /* Font for paragraphs */
+  font-size: 1.5em;
+  line-height: 1.5;
+  color: #555;
+  margin-bottom: 16px;
+}
